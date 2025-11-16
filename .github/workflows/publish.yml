@@ -68,7 +68,7 @@ jobs:
                   "labels": ["chore", "refactor", "style", "perf"]
                 }
               ],
-              "template": "${{CHANGELOG}}",
+              "template": "${{ '${{CHANGELOG}}' }}",
               "pr_template": "- #{{TITLE}} (#{{NUMBER}})"
             }
         env:
