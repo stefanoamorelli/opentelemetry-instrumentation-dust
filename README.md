@@ -127,4 +127,4 @@ OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 npm run manual-test
 
 [GPL-3.0](LICENSE)
 
-Copyright © 2025 [Stefano Amorelli](https://amorelli.tech) | [stefano@amorelli.tech](mailto:stefano@amorelli.tech) | [amorelli.tech](https://amorelli.tech)
+Copyright © 2025 [Stefano Amorelli](https://amorelli.tech) · [stefano@amorelli.tech](mailto:stefano@amorelli.tech) · [amorelli.tech](https://amorelli.tech)
