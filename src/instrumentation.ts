@@ -12,7 +12,7 @@ const VERSION = '1.0.0';
 
 export class DustInstrumentation extends InstrumentationBase {
   constructor(config: DustInstrumentationConfig = {}) {
-    super('@stefanoamorelli/opentelemetry-instrumentation-dust', VERSION, config);
+    super('@stefano.amorelli/opentelemetry-instrumentation-dust', VERSION, config);
   }
 
   protected init() {

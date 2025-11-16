@@ -1,7 +1,7 @@
 # <img src="https://avatars.githubusercontent.com/u/49998002?s=200&v=4" width="32" height="32" /> <img src="https://avatars.githubusercontent.com/u/116068963?s=48&v=4" width="32" height="32" /> OpenTelemetry Instrumentation for Dust
 
-[![npm version](https://img.shields.io/npm/v/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
-[![npm downloads](https://img.shields.io/npm/dm/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
+[![npm version](https://img.shields.io/npm/v/@stefano.amorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefano.amorelli/opentelemetry-instrumentation-dust)
+[![npm downloads](https://img.shields.io/npm/dm/@stefano.amorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefano.amorelli/opentelemetry-instrumentation-dust)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 [![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-1.x-orange.svg)](https://opentelemetry.io/)
@@ -19,13 +19,13 @@
 ## Installation
 
 ```bash
-npm install @stefanoamorelli/opentelemetry-instrumentation-dust
+npm install @stefano.amorelli/opentelemetry-instrumentation-dust
 # or
-yarn add @stefanoamorelli/opentelemetry-instrumentation-dust
+yarn add @stefano.amorelli/opentelemetry-instrumentation-dust
 # or
-pnpm add @stefanoamorelli/opentelemetry-instrumentation-dust
+pnpm add @stefano.amorelli/opentelemetry-instrumentation-dust
 # or
-bun add @stefanoamorelli/opentelemetry-instrumentation-dust
+bun add @stefano.amorelli/opentelemetry-instrumentation-dust
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ bun add @stefanoamorelli/opentelemetry-instrumentation-dust
 ```typescript
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import { DustInstrumentation } from '@stefanoamorelli/opentelemetry-instrumentation-dust';
+import { DustInstrumentation } from '@stefano.amorelli/opentelemetry-instrumentation-dust';
 
 const provider = new NodeTracerProvider();
 provider.register();

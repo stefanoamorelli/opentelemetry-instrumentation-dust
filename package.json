@@ -1,5 +1,5 @@
 {
-  "name": "@stefanoamorelli/opentelemetry-instrumentation-dust",
+  "name": "@stefano.amorelli/opentelemetry-instrumentation-dust",
   "version": "0.1.0",
   "description": "OpenTelemetry instrumentation for Dust API following gen-ai-agent-spans semantic conventions",
   "main": "dist/index.js",
