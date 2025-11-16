@@ -8,7 +8,7 @@
 > [!NOTE]
 > **What is this?** [Dust](https://dust.tt) is an AI agent platform for building custom assistants. [OpenTelemetry](https://opentelemetry.io/) is an observability framework for collecting traces, metrics, and logs from applications.
 >
-> This instrumentation package provides automatic observability using `OpenTelemetry` for `Dust` agent interactions, enabling you to monitor agent performance, track tool executions, debug failures, and analyze conversation patterns in production. [Read more about AI agent observability](https://opentelemetry.io/blog/2025/ai-agent-observability/).
+> This instrumentation package provides automatic observability using `OpenTelemetry` for `Dust` agent interactions, enabling you to monitor agent performance, track tool executions, debug failures, and analyze conversation patterns. [Read more about AI agent observability](https://opentelemetry.io/blog/2025/ai-agent-observability/).
 
 > [!IMPORTANT]
 > This is an **unofficial** and **experimental** package. It is not affiliated with or endorsed by Dust or OpenTelemetry. Breaking changes may occur between versions.
