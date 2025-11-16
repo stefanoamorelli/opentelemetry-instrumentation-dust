@@ -9,7 +9,7 @@
 > [!TIP]
 > **What is this?** [Dust](https://dust.tt) is an AI agent platform for building custom assistants. [OpenTelemetry](https://opentelemetry.io/) is an observability framework for collecting traces, metrics, and logs from applications.
 >
-> **Why?** This instrumentation package provides automatic observability for Dust agent interactions, enabling you to monitor agent performance, track tool executions, debug failures, and analyze conversation patterns in production. [Read more about AI agent observability](https://opentelemetry.io/blog/2025/ai-agent-observability/).
+> This instrumentation package provides automatic observability using `OepnTelemtry` for `Dust` agent interactions, enabling you to monitor agent performance, track tool executions, debug failures, and analyze conversation patterns in production. [Read more about AI agent observability](https://opentelemetry.io/blog/2025/ai-agent-observability/).
 
 > [!NOTE]
 > This is an **unofficial** and **experimental** package. It is not affiliated with or endorsed by Dust or OpenTelemetry. Breaking changes may occur between versions.
@@ -124,12 +124,6 @@ OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 npm run manual-test
 # Open Jaeger UI in your browser
 # Visit http://localhost:16686 and select service "dust-manual-test"
 ```
-
-## Resources
-
-- [Dust SDK Documentation](https://github.com/dust-tt/dust)
-- [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
-- [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
 
 ## License
 
