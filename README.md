@@ -14,9 +14,7 @@
 > [!NOTE]
 > This is an **unofficial** and **experimental** package. It is not affiliated with or endorsed by Dust or OpenTelemetry. Breaking changes may occur between versions.
 
-**Open source** [OpenTelemetry instrumentation](https://opentelemetry.io/docs/languages/js/instrumentation/) package for the [Dust SDK](https://github.com/dust-tt/dust) that automatically instruments agent interactions with [OpenTelemetry](https://opentelemetry.io/) using the [GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/).
-
-This package enables automatic observability for your Dust agents, capturing traces, spans, and metrics to help you understand agent behavior, debug issues, and optimize performance in production environments.
+**Open source** [OpenTelemetry instrumentation](https://opentelemetry.io/docs/languages/js/instrumentation/) package for the [Dust SDK](https://github.com/dust-tt/dust) that automatically captures agent interactions as distributed traces following the [GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/).
 
 ## Installation
 
