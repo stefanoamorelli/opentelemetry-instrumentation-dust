@@ -1,0 +1,36 @@
+export const SEMATTRS_GEN_AI_OPERATION_NAME = 'gen_ai.operation.name';
+export const SEMATTRS_GEN_AI_PROVIDER_NAME = 'gen_ai.provider.name';
+export const SEMATTRS_GEN_AI_AGENT_ID = 'gen_ai.agent.id';
+export const SEMATTRS_GEN_AI_AGENT_NAME = 'gen_ai.agent.name';
+export const SEMATTRS_GEN_AI_AGENT_DESCRIPTION = 'gen_ai.agent.description';
+export const SEMATTRS_GEN_AI_CONVERSATION_ID = 'gen_ai.conversation.id';
+export const SEMATTRS_GEN_AI_REQUEST_MODEL = 'gen_ai.request.model';
+export const SEMATTRS_GEN_AI_REQUEST_TEMPERATURE = 'gen_ai.request.temperature';
+export const SEMATTRS_GEN_AI_REQUEST_MAX_TOKENS = 'gen_ai.request.max_tokens';
+export const SEMATTRS_GEN_AI_RESPONSE_MODEL = 'gen_ai.response.model';
+export const SEMATTRS_GEN_AI_RESPONSE_ID = 'gen_ai.response.id';
+export const SEMATTRS_GEN_AI_RESPONSE_FINISH_REASONS = 'gen_ai.response.finish_reasons';
+export const SEMATTRS_GEN_AI_USAGE_INPUT_TOKENS = 'gen_ai.usage.input_tokens';
+export const SEMATTRS_GEN_AI_USAGE_OUTPUT_TOKENS = 'gen_ai.usage.output_tokens';
+export const SEMATTRS_GEN_AI_INPUT_MESSAGES = 'gen_ai.input.messages';
+export const SEMATTRS_GEN_AI_OUTPUT_MESSAGES = 'gen_ai.output.messages';
+export const SEMATTRS_GEN_AI_SYSTEM_INSTRUCTIONS = 'gen_ai.system_instructions';
+export const SEMATTRS_GEN_AI_TOOL_DEFINITIONS = 'gen_ai.tool.definitions';
+export const SEMATTRS_GEN_AI_TOOL_NAME = 'gen_ai.tool.name';
+export const SEMATTRS_GEN_AI_TOOL_DESCRIPTION = 'gen_ai.tool.description';
+export const SEMATTRS_GEN_AI_TOOL_CALL_ARGUMENTS = 'gen_ai.tool.call.arguments';
+export const SEMATTRS_GEN_AI_TOOL_CALL_RESULT = 'gen_ai.tool.call.result';
+export const SEMATTRS_GEN_AI_TOOL_CALL_ID = 'gen_ai.tool.call.id';
+export const SEMATTRS_ERROR_TYPE = 'error.type';
+export const SEMATTRS_SERVER_ADDRESS = 'server.address';
+export const SEMATTRS_SERVER_PORT = 'server.port';
+
+export const GEN_AI_OPERATION_INVOKE_AGENT = 'invoke_agent';
+export const GEN_AI_OPERATION_EXECUTE_TOOL = 'execute_tool';
+export const GEN_AI_PROVIDER_DUST = 'dust';
+
+export const DUST_EVENT_GENERATION_TOKENS = 'generation_tokens';
+export const DUST_EVENT_AGENT_ACTION_SUCCESS = 'agent_action_success';
+export const DUST_EVENT_AGENT_MESSAGE_SUCCESS = 'agent_message_success';
+export const DUST_EVENT_AGENT_ERROR = 'agent_error';
+export const DUST_EVENT_USER_MESSAGE_ERROR = 'user_message_error';
