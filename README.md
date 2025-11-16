@@ -1,4 +1,4 @@
-# @stefanoamorelli/opentelemetry-instrumentation-dust
+# OpenTelemetry Instrumentation Dust
 
 [![npm version](https://img.shields.io/npm/v/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
 [![npm downloads](https://img.shields.io/npm/dm/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
