@@ -1,4 +1,4 @@
-# OpenTelemetry Instrumentation Dust
+# <img src="https://avatars.githubusercontent.com/u/49998002?s=200&v=4" width="32" height="32" /> <img src="https://avatars.githubusercontent.com/u/116068963?s=48&v=4" width="32" height="32" /> OpenTelemetry Instrumentation for Dust
 
 [![npm version](https://img.shields.io/npm/v/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
 [![npm downloads](https://img.shields.io/npm/dm/@stefanoamorelli/opentelemetry-instrumentation-dust.svg)](https://www.npmjs.com/package/@stefanoamorelli/opentelemetry-instrumentation-dust)
