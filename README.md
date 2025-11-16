@@ -133,6 +133,6 @@ OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 npm run manual-test
 
 ## License
 
-GPL-3.0
+[GPL-3.0](LICENSE)
 
 Copyright © 2025 Stefano Amorelli <stefano@amorelli.tech>
