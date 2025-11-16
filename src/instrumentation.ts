@@ -229,8 +229,10 @@ export class DustInstrumentation extends InstrumentationBase {
                     [constants.SEMATTRS_GEN_AI_OPERATION_NAME]:
                       constants.GEN_AI_OPERATION_EXECUTE_TOOL,
                     [constants.SEMATTRS_GEN_AI_PROVIDER_NAME]: constants.GEN_AI_PROVIDER_DUST,
-                    [constants.SEMATTRS_GEN_AI_TOOL_NAME]: event.action.functionCallName || 'unknown',
-                    [constants.SEMATTRS_GEN_AI_TOOL_CALL_ID]: event.action.functionCallId || event.action.sId || 'unknown',
+                    [constants.SEMATTRS_GEN_AI_TOOL_NAME]:
+                      event.action.functionCallName || 'unknown',
+                    [constants.SEMATTRS_GEN_AI_TOOL_CALL_ID]:
+                      event.action.functionCallId || event.action.sId || 'unknown',
                   },
                 },
                 trace.setSpan(context.active(), span)
