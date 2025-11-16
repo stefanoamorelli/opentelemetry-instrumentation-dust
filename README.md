@@ -106,6 +106,8 @@ npm run manual-test
 
 ### Visualizing Traces
 
+<img width="3718" height="1933" alt="image" src="https://github.com/user-attachments/assets/bb5fd263-7083-4ccd-bb4c-993c3306d1db" />
+
 For quick testing and debugging, you can visualize traces in a waterfall view using [Jaeger](https://www.jaegertracing.io/), an open-source distributed tracing platform. This shows the complete agent invocation hierarchy including tool executions and timing information.
 
 ```bash
