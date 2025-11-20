@@ -206,6 +206,7 @@ export class DustInstrumentation extends InstrumentationBase {
     let outputContent = '';
     let agentConfig: any = null;
     let finishReason: string | null = null;
+    const retrievalDocuments: any[] = [];
 
     try {
       for await (const event of eventStream) {
@@ -253,6 +254,16 @@ export class DustInstrumentation extends InstrumentationBase {
                 }
               }
 
+              if (event.action.output && Array.isArray(event.action.output)) {
+                for (const item of event.action.output) {
+                  if (item.type === 'retrieval_documents' && item.documents) {
+                    retrievalDocuments.push(...item.documents);
+                  } else if (item.type === 'resource') {
+                    retrievalDocuments.push(item);
+                  }
+                }
+              }
+
               toolSpan.end();
             }
             break;
@@ -294,6 +305,13 @@ export class DustInstrumentation extends InstrumentationBase {
 
       if (finishReason) {
         span.setAttribute(constants.SEMATTRS_GEN_AI_RESPONSE_FINISH_REASONS, [finishReason]);
+      }
+
+      if (retrievalDocuments.length > 0) {
+        span.setAttribute(
+          constants.SEMATTRS_GEN_AI_RETRIEVAL_DOCUMENTS,
+          JSON.stringify(retrievalDocuments)
+        );
       }
 
       span.end();
