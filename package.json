@@ -65,5 +65,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stefanoamorelli/opentelemetry-instrumentation-dust.git"
-  }
+  },
+  "homepage": "https://www.npmjs.com/package/@stefano.amorelli/opentelemetry-instrumentation-dust"
 }
