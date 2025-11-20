@@ -21,6 +21,7 @@ export const SEMATTRS_GEN_AI_TOOL_DESCRIPTION = 'gen_ai.tool.description';
 export const SEMATTRS_GEN_AI_TOOL_CALL_ARGUMENTS = 'gen_ai.tool.call.arguments';
 export const SEMATTRS_GEN_AI_TOOL_CALL_RESULT = 'gen_ai.tool.call.result';
 export const SEMATTRS_GEN_AI_TOOL_CALL_ID = 'gen_ai.tool.call.id';
+export const SEMATTRS_GEN_AI_RETRIEVAL_DOCUMENTS = 'dust.retrieval.documents';
 export const SEMATTRS_ERROR_TYPE = 'error.type';
 export const SEMATTRS_SERVER_ADDRESS = 'server.address';
 export const SEMATTRS_SERVER_PORT = 'server.port';
