@@ -35,10 +35,10 @@
   "devDependencies": {
     "@dust-tt/client": "^1.1.18",
     "@opentelemetry/api": "^1.9.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.56.0",
-    "@opentelemetry/resources": "^1.28.0",
-    "@opentelemetry/sdk-trace-base": "^1.28.0",
-    "@opentelemetry/sdk-trace-node": "^1.28.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.208.0",
+    "@opentelemetry/resources": "^2.2.0",
+    "@opentelemetry/sdk-trace-base": "^2.2.0",
+    "@opentelemetry/sdk-trace-node": "^2.2.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
@@ -51,7 +51,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@opentelemetry/instrumentation": "^0.56.0",
+    "@opentelemetry/instrumentation": "^0.208.0",
     "@opentelemetry/semantic-conventions": "^1.28.0"
   },
   "resolutions": {
