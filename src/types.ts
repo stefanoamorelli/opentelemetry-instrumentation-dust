@@ -30,6 +30,13 @@ export interface AgentEvent {
   message?: {
     id?: string;
     content?: string;
+    configuration?: {
+      sId?: string;
+      name?: string;
+      description?: string;
+      version?: number;
+      versionCreatedAt?: string | null;
+    };
   };
 }
 
