@@ -61,7 +61,7 @@ This instrumentation maps Dust SDK operations to OpenTelemetry spans following t
 
 | Dust SDK Method | OpenTelemetry Span | Operation Name | Key Attributes |
 |-----------------|-------------------|----------------|----------------|
-| `createConversation()` | `invoke_agent {agent_id}` | `invoke_agent` | `gen_ai.conversation.id`<br>`gen_ai.agent.id`<br>`gen_ai.response.id`<br>`gen_ai.input.messages` (opt-in) |
+| `createConversation()` | `invoke_agent {agent_id}` | `invoke_agent` | `gen_ai.conversation.id`<br>`gen_ai.agent.id`<br>`gen_ai.response.id`<br>`enduser.id`<br>`gen_ai.input.messages` (opt-in) |
 | `streamAgentAnswerEvents()` | `invoke_agent` | `invoke_agent` | `gen_ai.conversation.id`<br>`gen_ai.usage.output_tokens`<br>`gen_ai.response.finish_reasons`<br>`gen_ai.output.messages` (opt-in) |
 | Event: `agent_action_success` | `execute_tool` (child span) | `execute_tool` | `gen_ai.tool.name`<br>`gen_ai.tool.call.id`<br>`gen_ai.tool.call.arguments` (opt-in)<br>`gen_ai.tool.call.result` (opt-in) |
 
@@ -69,6 +69,9 @@ All spans include:
 - `gen_ai.provider.name` = `"dust"`
 - `gen_ai.operation.name` = operation type
 - Error tracking via `error.type` and span status
+
+> [!NOTE]
+> The `enduser.id` attribute is automatically populated from the `email` field in the conversation context (`args.message.context.email`), if available. This allows you to track usage and issues per user.
 
 ## Configuration
 
