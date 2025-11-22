@@ -292,7 +292,10 @@ export class DustInstrumentation extends InstrumentationBase {
                 span.setAttribute(constants.SEMATTRS_DUST_AGENT_VERSION, config.version);
               }
               if (config.versionCreatedAt) {
-                span.setAttribute(constants.SEMATTRS_DUST_AGENT_VERSION_CREATED_AT, config.versionCreatedAt);
+                span.setAttribute(
+                  constants.SEMATTRS_DUST_AGENT_VERSION_CREATED_AT,
+                  config.versionCreatedAt
+                );
               }
             }
             break;
