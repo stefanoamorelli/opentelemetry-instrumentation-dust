@@ -83,6 +83,10 @@ export class DustInstrumentation extends InstrumentationBase {
         context.active()
       );
 
+      if (args.message?.context?.email) {
+        span.setAttribute(constants.SEMATTRS_ENDUSER_ID, args.message.context.email);
+      }
+
       if (config.captureMessageContent && args.message?.content) {
         span.setAttribute(
           constants.SEMATTRS_GEN_AI_INPUT_MESSAGES,
