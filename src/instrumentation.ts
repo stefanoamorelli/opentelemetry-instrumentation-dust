@@ -280,6 +280,21 @@ export class DustInstrumentation extends InstrumentationBase {
             if (event.messageId) {
               span.setAttribute(constants.SEMATTRS_GEN_AI_RESPONSE_ID, event.messageId);
             }
+            if (event.message?.configuration) {
+              const config = event.message.configuration;
+              if (config.name) {
+                span.setAttribute(constants.SEMATTRS_GEN_AI_AGENT_NAME, config.name);
+              }
+              if (config.description) {
+                span.setAttribute(constants.SEMATTRS_GEN_AI_AGENT_DESCRIPTION, config.description);
+              }
+              if (config.version !== undefined) {
+                span.setAttribute(constants.SEMATTRS_DUST_AGENT_VERSION, config.version);
+              }
+              if (config.versionCreatedAt) {
+                span.setAttribute(constants.SEMATTRS_DUST_AGENT_VERSION_CREATED_AT, config.versionCreatedAt);
+              }
+            }
             break;
 
           case constants.DUST_EVENT_AGENT_ERROR:
